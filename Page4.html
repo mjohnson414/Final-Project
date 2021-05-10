@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+  <script>
+    function GetName()
+    {
+      var x = window.localStorage.getItem("UNAME");
+      document.getElementById("WELCOME").innerHTML = x + " ~ The SpongeBob Race";
+    }
+    function Right()
+    {
+       window.location.href = "Page5.html";
+    }
+    function Left()
+    {
+       window.location.href = "Page6.html";
+    }
+  </script>
+  </head>
+  <body onload = "GetName()">
+    <h1 id = "WELCOME"> </h1>
+    <hr>
+    <p>  There is a fork in the road. Should SpongeBob go left or right?
+     </p>
+    <hr>
+    <img src = "Spongebob.png" height="300px"width="300px">
+    <input type = "button" value = "Right" onclick = "Right()" id = "right">
+    <input type = "button" value = "Left" onclick = "Left()" id = "left">
+    <br> <br>
+    </body>
+</html>

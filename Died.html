@@ -1,0 +1,26 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+  <script>
+    function GetName()
+    {
+      var x = window.localStorage.getItem("UNAME");
+      document.getElementById("WELCOME").innerHTML = x + " ~ The SpongeBob Race";
+    }
+    function Startover()
+    {
+       window.location.href = "Index.html";
+    }
+  </script>
+  </head>
+  <body onload = "GetName()">
+    <h1 id = "WELCOME"> </h1>
+    <hr>
+    <p>  OH NO! You made the wrong choice you got hit by a car.
+     </p>
+    <hr>
+    <p style = "font-size: 70px"> GAME OVER </p>
+    <input type = "button" value = "Start over" onclick="Startover()" id = "Home">
+    <br> <br>
+    </body>
+</html>

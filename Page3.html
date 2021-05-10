@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+  <script>
+    function GetName()
+    {
+      var x = window.localStorage.getItem("UNAME");
+      document.getElementById("WELCOME").innerHTML = x + " ~ The SpongeBob Race";
+    }
+    function NextPage1()
+    {
+       window.location.href = "PAGE4.html";
+    }
+    function NextPage2()
+    {
+       window.location.href = "cop.html";
+    }
+
+  </script>
+  </head>
+  <body onload = "GetName()">
+    <h1 id = "WELCOME"> </h1>
+    <hr>
+    <p>  Should SpongeBob speed 5 MPH over the speed limit or 10 MPH?
+     </p>
+    <hr>
+    <img src = "Spongebob.png" height="300px"width="300px">
+    <input type = "button" value = "Speed 5 MPH" onclick="NextPage1()" id = "5">
+    <input type = "button" value = "Speed 10 MPH" onclick="NextPage2()" id = "10">
+    <br> <br>
+    </body>
+</html>

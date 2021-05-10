@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+  <script>
+    function GetName()
+    {
+      var x = window.localStorage.getItem("UNAME");
+      document.getElementById("WELCOME").innerHTML = x + " ~ The SpongeBob Race";
+    }
+    function Cops()
+    {
+       window.location.href = "cop.html";
+    }
+    function Died()
+    {
+       window.location.href = "Died.html";
+    }
+  </script>
+  </head>
+  <body onload = "GetName()">
+    <h1 id = "WELCOME"> </h1>
+    <hr>
+    <p>  SpongeBob is at a red light. Should he run it to get to work faster or should he wait for it to turn green?
+     </p>
+    <hr>
+    <img src = "Spongebob.png" height="300px"width="300px">
+    <input type = "button" value = "Run it" onclick = "Cops()" id = "Run">
+    <input type = "button" value = "Wait" onclick = "Died()"id = "wait">
+    <br> <br>
+    </body>
+</html>

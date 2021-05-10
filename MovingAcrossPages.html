@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script>
+    function SaveName()
+    {
+      var x = document,getElementById("name").value;
+      window.localStrorage.setItem("uname",x);
+    }
+     function pagetwo()
+     {
+       window.location.href = "movingAcrossPages2.html";
+     }
+  </script>
+</head>
+<body>
+  <h1> Keeping Varibles After Leaving Pages</h1>
+  <p> Enter Name </p>
+  <input type= "text" id = "name">
+  <input type = "button" value =  "Save" onclick = "SaveName()">
+  <input type = "button" value =  "Move" onclick = "pagetwo()">
+</body>
+</html>

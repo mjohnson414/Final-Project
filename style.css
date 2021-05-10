@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+* {
+  margin:0;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+body {
+
+  background-image: url("Background2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 500px;
+  margin: auto;
+}
+hr {
+  border-style: inset;
+  border-width: 2px;
+  border-color: black;
+}
+input {
+  background-color: white;
+}
+table{
+    background-image: url("party2.jpg");
+    height: 168px;
+    width: 300px;
+}

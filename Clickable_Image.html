@@ -1,0 +1,39 @@
+<html>
+<head>
+  <script>
+  function hide()
+  {
+    document.getElementById("answer").style.visiblity = "hidden";
+    document.getElementById("button").style.visiblity = "hidden";
+  }
+
+  function actionOne()
+  {
+   document.getElementById("question").innerHTML = "What kind of food always passes its vision test?";
+    document.getElementById("answer").style.visiblity = "visible";
+    document.getElementById("button").style.visiblity = "visible";
+  }
+  function CheckAnswer()
+  {
+    var x = document.getElementById("answer").value;
+     if(x=="seafood")
+     {
+       alert("correct");
+     }
+     else{
+         document.getElementById("pic").innerHTML =  "<img src = 'trap.jpg'>";
+         document.getElementById("")
+     }
+   }
+  </script>
+</head>
+
+<body  onload = "hide()">
+<h1> CLick the tree to ask it a question </h1>
+<p id = "pic">
+<img src = "tree.jpg"  width = "50%" height ="50%" onclick = "actionOne()">
+<p id= "question"> </p>
+<input type = "text" id = "answer">
+<input type = "button" id = "button" onclick = "CheckAnswer()">
+</body>
+</html>

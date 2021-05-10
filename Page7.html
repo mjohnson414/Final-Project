@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+  <script>
+    function GetName()
+    {
+      var x = window.localStorage.getItem("UNAME");
+      document.getElementById("WELCOME").innerHTML = x + " ~ The SpongeBob Race";
+    }
+    function AnswerPhone()
+    {
+       window.location.href = "Died.html";
+    }
+    function IgnoreIt()
+    {
+       window.location.href = "Finish.html";
+    }
+
+  </script>
+  </head>
+  <body onload = "GetName()">
+    <h1 id = "WELCOME"> </h1>
+    <hr>
+    <p>  Patrick is calling SpongeBob on his phone. Should SpongeBob Answer Patrick or ignore him?
+     </p>
+    <hr>
+    <img src = "Spongebob.png" height="200px"width="200px">
+    <img src = "Patrick1.png" height="200px"width="200px">
+    <input type = "button" value = "Answer Patrick" onclick = "AnswerPhone()" id = "Answer1">
+    <input type = "button" value = "Ignore Patrick" onclick = "IgnoreIt()" id = "Ignore1">
+    <br> <br>
+    </body>
+</html>

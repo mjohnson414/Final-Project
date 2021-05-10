@@ -1,0 +1,20 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+  <script>
+  function SAVENAME()
+  {
+    var x = document.getElementById("NAME").value;
+    window.localStorage.setItem("UNAME",x);
+     window.location.href = "PAGE2.html";
+  }
+  </script>
+  </head>
+<body>
+  <h1 id= "h1"> Welcome to the game! </h1>
+  <p id= "p"> Enter your name to begin game </p>
+  <input type = "text" Value = "YOUR NAME HERE" id = "NAME">
+  <input type = "button" value = "ENTER" id = BUTTON onclick = "SAVENAME()">
+  <img src = "Spongebob.png" height="300px"width="300px">
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+  <script>
+
+    function GetName()
+    {
+      var x = window.localStorage.getItem("UNAME");
+      document.getElementById("WELCOME").innerHTML = x + " ~ The SpongeBob Race";
+    }
+    function NextPage()
+    {
+       window.location.href = "PAGE3.html";
+    }
+  </script>
+  </head>
+  <body onload = "GetName()">
+    <h1 id = "WELCOME"> </h1>
+    <hr>
+    <p> SpongeBob is running late for work. Your job is to get him to work as soon as possible.
+      Take the quickest route to work with out getting pulled over by a cop or worse dying.
+     </p>
+    <hr>
+    <img src = "Spongebob.png" height="300px"width="300px">
+    <input type = "button" value = "BEGIN GAME" onclick = "NextPage()" id = BUTTON>
+    <br> <br>
+    </body>
+</html>

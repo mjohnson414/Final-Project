@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+  <script>
+    function GetName()
+    {
+      var x = window.localStorage.getItem("UNAME");
+      document.getElementById("WELCOME").innerHTML = x + " ~ The SpongeBob Race";
+    }
+    function Jelly()
+    {
+       window.location.href = "PAGE7.html";
+    }
+    function Fish()
+    {
+       window.location.href = "Page7.html";
+    }
+  </script>
+  </head>
+  <body onload = "GetName()">
+    <h1 id = "WELCOME"> </h1>
+    <hr>
+    <p>  Oh No! Jellyfish are blocking the road.
+      SpongeBob thinks he should run them over, but that will not be good for the car.
+     </p>
+    <hr>
+    <img src = "Spongebob.png" height="200px"width="200px">
+    <img src = "JellyFish.png" height="200px"width="200px">
+    <input type = "button" value = "Go around the Jellyfish"  onclick= "Jelly()" id = "Jelly">
+    <input type = "button" value = "Run the Jellyfish over" onclick= "Fish()" id = "Fish">
+    <br> <br>
+    </body>
+</html>

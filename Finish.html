@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+  <script>
+    function GetName()
+    {
+      var x = window.localStorage.getItem("UNAME");
+      document.getElementById("WELCOME").innerHTML = x + " ~ The SpongeBob Race";
+    }
+
+    function Startover()
+    {
+       window.location.href = "Index.html";
+    }
+
+    function hide4()
+    {
+      document.getElementById('pic4').innerHTML = "";
+    }
+
+    function hide1()
+    {
+      document.getElementById('pic1').innerHTML = "";
+    }
+    function hide2()
+    {
+      document.getElementById('pic2').innerHTML = "";
+    }
+    function hide3()
+    {
+      document.getElementById('pic3').innerHTML = "";
+    }
+
+    function get()
+    {
+       document.getElementById('pic1').innerHTML = "<img  src = 'p1.png' height='300px'width='300px'  onmouseover='hide1()' onmouseout ='get()'>";
+       document.getElementById('pic2').innerHTML = "<img  src = 'p2.png' height='300px'width='300px' onmouseover='hide2()' onmouseout ='get()'>";
+       document.getElementById('pic3').innerHTML = "<img  src = 'p3.jpg' height='300px'width='300px' onmouseover='hide3()' onmouseout ='get()'>";
+       document.getElementById('pic4').innerHTML = "<img  src = 'p4.jpg' height='300px'width='300px' onmouseover='hide4()' onmouseout ='get()'>";
+    }
+  </script>
+  </head>
+  <body onload = "GetName()">
+    <h1 id = "WELCOME"> </h1>
+    <hr>
+    <p>  YES! You helped SpongeBob get to work ontime!! </p>
+    <hr>
+    <table style="width:100%" onmouseout ="get()">
+  <tr>
+    <td id ="pic1" height="300px"width="300px">  <img  src = "p1.png" height="300px"width="300px" onmouseover="hide1()"> </td>
+    <td id ="pic2" height="300px"width="300px">  <img   src = "p4.jpg" height="300px"width="300px" onmouseover="hide2()"></td>
+  </tr>
+  <tr>
+    <td id ="pic3" height="300px"width="300px">  <img  src = "p3.jpg" height="300px"width="300px" onmouseover="hide3()"></td>
+    <td id ="pic4" height="300px"width="300px">  <img  src = "p2.png" height="300px"width="300px" onmouseover="hide4()"></td>
+  </tr>
+  <tr>
+
+</table>
+  <input type = "button" value = "Start over" onclick= "Startover()"id = "Home">
+    <br> <br>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+  <script>
+    function table()
+    {
+      var x = document.getElementById("money").value;
+      x = parseInt(x);
+      var amount = 5;
+      var res = "potion chart";
+      for(var i = 5; i <= x; i = i +5)
+      {
+        res = res + amount + " coins &nbsp&nbsp you can buy &nbsp&nbsp" + i + " potion, ";
+        amount = amount + 5;
+      }
+      document.getElementById("result").innerHTML = res;
+    }
+
+
+      function newQuestion()
+      {
+        var x = document.getElementById("money").value;
+        x = parseInt(x);
+        if(x==50)
+      {
+        document.getElementById("result").innerHTML = "input type = 'button' value = 'proceed' onclick = 'table()'>";
+      }
+      else{
+        newQuestion()
+      }
+      }
+
+    </script>
+  <style>
+    </style>
+  </head>
+  <body>
+    <h1> Welcome to the shop </h1>
+    <p> Type in how many coins you have </p>
+    <input type = "text" id = "money">
+      <input type = "button" value = "convert" onclick = "newQuestion()">
+      <p id = "result"> </p>
+    </body>
+</html>
